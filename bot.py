@@ -22,6 +22,6 @@ async def setup_hook():
 @bot.event
 async def on_ready():
     await bot.tree.sync()
-    print(f"🦉 IBIS online as {bot.user}")
+    print(f" IBIS online as {bot.user}")
 
 bot.run(TOKEN, log_level=logging.INFO)

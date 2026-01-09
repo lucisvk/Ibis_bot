@@ -1,2 +1,54 @@
-[2026-01-08 07:46:19] [INFO    ] discord.client: logging in using static token
-[2026-01-08 07:46:19] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: c5878d3b8b1598c017c3202e618ef0ad).
+[2026-01-09 10:46:36] [INFO    ] discord.client: logging in using static token
+[2026-01-09 10:46:37] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: aa88fafe88f290b6be2b8157cfa6095f).
+[2026-01-09 10:47:58] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command ban
+Traceback (most recent call last):
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/flags.py", line 633, in convert
+    values = arguments[name]
+KeyError: 'member'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1056, in invoke
+    await self.prepare(ctx)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/core.py", line 973, in prepare
+    await self._parse_arguments(ctx)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/core.py", line 888, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/core.py", line 750, in transform
+    return await run_converters(ctx, converter, argument, param)  # type: ignore
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/converter.py", line 1442, in run_converters
+    return await _actual_conversion(ctx, converter, argument, param)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/converter.py", line 1324, in _actual_conversion
+    return await converter.convert(ctx, argument)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/flags.py", line 636, in convert
+    raise MissingRequiredFlag(flag)
+discord.ext.commands.errors.MissingRequiredFlag: Flag 'member' is required and missing
+[2026-01-09 10:48:26] [ERROR   ] discord.ext.commands.bot: Ignoring exception in command ban
+Traceback (most recent call last):
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/flags.py", line 633, in convert
+    values = arguments[name]
+KeyError: 'member'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1056, in invoke
+    await self.prepare(ctx)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/core.py", line 973, in prepare
+    await self._parse_arguments(ctx)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/core.py", line 888, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/core.py", line 750, in transform
+    return await run_converters(ctx, converter, argument, param)  # type: ignore
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/converter.py", line 1442, in run_converters
+    return await _actual_conversion(ctx, converter, argument, param)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/converter.py", line 1324, in _actual_conversion
+    return await converter.convert(ctx, argument)
+  File "/Users/tylermorency/.pyenv/versions/3.10.15/lib/python3.10/site-packages/discord/ext/commands/flags.py", line 636, in convert
+    raise MissingRequiredFlag(flag)
+discord.ext.commands.errors.MissingRequiredFlag: Flag 'member' is required and missing
